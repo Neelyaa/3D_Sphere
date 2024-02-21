@@ -92,7 +92,18 @@ li {
 
 .container__text {
     width: 30%;
-    margin: 250px 0 0 250px;
+    margin: 250px 0 0 270px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #A1A1A1;
 }
 
 .txt_btn {
@@ -110,17 +121,6 @@ li {
 
 .txt_btn:hover {
     background-color: #3148bd;
-}
-
-h1 {
-    font-size: 4rem;
-    font-weight: 600;
-}
-
-p {
-    font-size: 1rem;
-    margin-top: 20px;
-    color: #A1A1A1;
 }
 
 .container__3d {
