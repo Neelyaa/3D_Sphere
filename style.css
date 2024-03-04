@@ -136,25 +136,25 @@ p {
     width: 30px;
     height: 3px;
     background-color: #A1A1A1;
+    transition: background-color 0.5s ease;
 }
 
 .nav__list-burger::before,
 .nav__list-burger::after {
     content: '';
     position: absolute;
-    left: 0;
     width: 100%;
     height: 3px;
     background-color: #A1A1A1;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease-in-out;
 }
 
 .nav__list-burger::before {
-    top: -10px;
+   transform: translateY(-10px);
 }
 
 .nav__list-burger::after {
-    bottom: -10px;
+    transform: translateY(10px);
 }
 
 .nav__list-burger.active {
@@ -169,10 +169,6 @@ p {
 .nav__list-burger.active::after {
     transform: rotate(-45deg);
     bottom: 0;
-}
-
-.nav__list-burger.active {
-    transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1270px) {
@@ -246,6 +242,7 @@ p {
 
     .nav__list ul {
         opacity: 0;
+        transition: opacity 0.5s ease-in;
         flex-direction: column;
         position: absolute;
         top: 70px;
@@ -259,7 +256,7 @@ p {
         display: flex;
         z-index: 3;
         opacity: 1;
-        transition: opacity 0.5s ease;
+        transition: opacity 0.5s ease-in-out;
     }
 }
 
